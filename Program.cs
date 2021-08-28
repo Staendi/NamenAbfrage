@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace NamenAbfrage
 {
@@ -33,6 +34,11 @@ namespace NamenAbfrage
                 {
                     Console.WriteLine("Falsches Passwort angegeben!");
                     //Programm wiederholen
+                    Console.WriteLine("Das Programm wird nun wiederholt!");
+                    //Warte 5 Sekunden
+                    Thread.Sleep(5000);
+                    //Console Leeren
+                    Console.Clear();
                     Main();
                 }
             }
@@ -41,6 +47,11 @@ namespace NamenAbfrage
             {
                 Console.WriteLine("Falscher UserName angegeben!");
                 //Programm wiederholen
+                Console.WriteLine("Das Programm wird nun wiederholt!");
+                //Warte 5 Sekunden
+                Thread.Sleep(5000);
+                //Console Leeren
+                Console.Clear();
                 Main();
             }
         }
